@@ -1684,7 +1684,7 @@ span.quort{
   color: #5f6771;
 }
 .multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .product_select:focus {
-  border-color: #5cb85c;
+  border-color: #b9935a;
 }
 .multi_step_form #msform fieldset .form-control:focus.placeholder, .multi_step_form #msform fieldset .product_select:focus.placeholder {
   color: transparent;
@@ -1721,7 +1721,7 @@ span.quort{
   line-height: 36px;
   font-size: 22px;
   margin-bottom: 10px;
-  background: #5cb85c;
+  background: #b9935a;
   display: inline-block;
   border-radius: 50%;
   color: #ffffff;
@@ -1759,7 +1759,7 @@ span.quort{
   position: absolute;
   top: 4px;
   right: 0;
-  background: #5cb85c;
+  background: #b9935a;
   display: inline-block;
   border-radius: 50%;
   color: #ffffff;
@@ -1792,8 +1792,8 @@ span.quort{
   padding-right: 10px;
 }
 .multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:hover, .multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:focus {
-  background: #5cb85c;
-  border-color: #5cb85c;
+  background: #b9935a;
+  border-color: #b9935a;
   color: #fff;
 }
 .multi_step_form #msform fieldset .input-group .custom-file input {
@@ -1809,7 +1809,7 @@ span.quort{
   color: #5f6771;
 }
 .multi_step_form #msform fieldset .file_added li a {
-  color: #5cb85c;
+  color: #b9935a;
   font-weight: 500;
   display: inline-block;
   position: relative;
@@ -1866,21 +1866,21 @@ span.quort{
   width: 150%;
 }
 .multi_step_form #msform #progressbar li.active {
-  color: #5cb85c;
+  color: #b9935a;
 }
 .multi_step_form #msform #progressbar li.active:before, .multi_step_form #msform #progressbar li.active:after {
-  background: #5cb85c;
+  background: #b9935a;
   color: white;
 }
 .multi_step_form #msform .action-button {
-  background: #5cb85c;
+  background: #b9935a;
   color: white;
   border: 0 none;
   border-radius: 5px;
   cursor: pointer;
   min-width: 130px;
   font: 700 14px/40px "Roboto", sans-serif;
-  border: 1px solid #5cb85c;
+  border: 1px solid #b9935a;
   margin: 0 5px;
   text-transform: uppercase;
   display: inline-block;
@@ -1920,3 +1920,30 @@ video {
     display: block;
   }
 }
+
+label.check {
+  cursor: pointer;
+}
+label.check input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.check span{
+  padding: 7px 14px;
+    border: 2px solid #b9935a;
+    display: inline-block;
+    color: #b9935a;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+label.check input:checked + span {
+  border-color: #b9935a;
+  background-color: #b9935a;
+  color: #fff;
+}
+
