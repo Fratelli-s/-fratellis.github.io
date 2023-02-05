@@ -19,7 +19,16 @@
     <link href="css/demo.css" rel="stylesheet">
     <link href="css/jquery.mmenu.all.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleProgressSection.css" rel="stylesheet">
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font.css">
+    <!-- DATE-PICKER -->
+		<link rel="stylesheet" href="css/datepicker.min.css">
     <link href="css/responsive.css" rel="stylesheet">
+ 
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
     <link rel="shortcut icon" href="images/logo.png">
 
@@ -90,7 +99,7 @@
           <section class="event-container">
             <div class="container">
               <div class="event-detail-wrap">
-                <div class="event-list wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <div class="event-list wow fadeInDown" >
                   <div class="event-pic">
                     <img src="images/event1.jpg" alt="">
                   </div>
@@ -105,6 +114,148 @@
                   <div class="prev-link"><a href="javascript:;" class="btn-black">Previous event</a></div><div class="next-link"><a href="javascript:;" class="btn-black">Next event</a></div>  
                 </div>
               </div> <!-- event-wrap -->
+            </div>
+          </section> <!-- event-container -->
+
+          <section class="event-container">
+            <div id="ProgessSection">
+              <div class="wrapper" style="border:1px solid #efefef;margin:5px; box-shadow:5px 8px 8px 0 #ccc;">
+                <form action="" id="wizard">
+                  <!-- SECTION 1 -->
+                  <h4></h4>
+                  <section>
+                    <h3>DATOS PERSONALES</h3>
+                    <div class="form-row">
+                      <div class="form-holder col-12">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                        <i class="bi bi-person-fill"></i>
+                      </div>
+                      <div class="form-holder">
+                        <i class="bi bi-person-fill"></i>
+                        <input type="text" class="form-control" placeholder="Apellidos">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-holder w-100">
+                        <input type="text" class="form-control" placeholder="Correo electrónico">
+                        <i class="bi bi-envelope-fill"></i>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-holder w-100">
+                        <input type="text" class="form-control" placeholder="Número telefónico">
+                        <i class="bi bi-telephone-fill"></i>
+                      </div>
+                    </div>
+                  </section>
+      
+                  <!-- SECTION 2 -->
+                  <h4></h4>
+                  <section>
+                    <h3>DATOS DEL EVENTO</h3>
+                    <div class="form-row">
+                      <div class="form-holder w-100">
+                        <select class="form-select form-control" aria-label="Default select example">
+                          <option selected>Tipo de evento...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <i class="bi bi-megaphone-fill"></i>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-holder w-100">
+                        <input type="date" class="form-control" placeholder="Fecha del evento">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-holder col-12">
+                        <input type="text" class="form-control" placeholder="Cantidad de personas">
+                        <i class="bi bi-people-fill"></i>
+                      </div>
+                      <div class="form-holder">
+                        <i class="bi bi-alarm-fill"></i>
+                        <input type="text" class="form-control" placeholder="Duración del evento">
+                      </div>
+                    </div>
+                  </section>
+      
+                  <!-- SECTION 3 -->
+                  <h4></h4>
+                  <section>
+                    <h3 style="margin-bottom: 2px;">ELECCIÓN DE PRODUCTOS</h3>
+                    <span class="woocommerce-Price-amount amount">
+                      Seleccione los productos de nuestro menú que le gustaría tener en su evento
+                    </span>
+                    <div class="row" style="margin-top: 16px;">
+                      <div class="col-md-3 col-xs-3">
+                        <label class="check">
+                          <input type="checkbox">
+                          <span>
+                            <div class="row">
+                              <p href="#"><img src="images/menu/helados/1.jpg" class="imageEdition" alt=""></p>
+                            </div>
+                            <div class="row">
+                              <p href="#" class="buttonEdition">HELADOS</p>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="col-md-3 col-xs-3">
+                        <label class="check">
+                          <input type="checkbox">
+                          <span>
+                            <div class="row">
+                              <p href="#"><img src="images/menu/bebidas/1.jpg" class="imageEdition" alt=""></p>
+                            </div>
+                            <div class="row">
+                              <p href="#" class="buttonEdition">BEBIDAS</p>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="col-md-3 col-xs-3">
+                        <label class="check">
+                          <input type="checkbox">
+                          <span>
+                            <div class="row">
+                              <p href="#"><img src="images/menu/bebidas calientes/1.jpg" class="imageEdition" alt=""></p>
+                            </div>
+                            <div class="row">
+                              <p href="#" class="buttonEdition">BEBIDAS CALIENTES</p>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="col-md-3 col-xs-3">
+                        <label class="check">
+                          <input type="checkbox">
+                          <span>
+                            <div class="row">
+                              <p href="#"><img src="images/menu/bebidas calientes/1.jpg" class="imageEdition" alt=""></p>
+                            </div>
+                            <div class="row">
+                              <p href="#" class="buttonEdition">POSTRES</p>
+                            </div>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </section>
+
+                  <!-- SECTION 4 -->
+                  <h4></h4>
+                  <section>
+                    <h3>¡GRACIAS POR SU PREFERENCIA!</h3>
+                    <div class="row">
+                      <span class="woocommerce-Price-amount amount">
+                        Recibiremos su contratación con todos los datos proporcionados y nos contactaremos con usted lo antes posible.
+                      </span>
+                    </div>
+                  </section>
+                </form>
+              </div>
             </div>
           </section> <!-- event-container -->
           <div class="map-outer">
@@ -187,5 +338,12 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.js"></script>
     <script src="js/script.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+		
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+
+		<script src="js/main.js"></script>
   </body>
 </html>
