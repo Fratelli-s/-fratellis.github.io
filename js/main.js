@@ -1,99 +1,93 @@
-$(function(){
-	$("#wizard").steps({
-        headerTag: "h4",
-        bodyTag: "section",
-        transitionEffect: "fade",
-        enableAllSteps: true,
-        transitionEffectSpeed: 300,
-        labels: {
-            next: "Siguiente",
-            previous: "Regresar",
-            finish: 'Enviar contratación'
-        },
-        onStepChanging: function (event, currentIndex, newIndex) { 
-            if ( newIndex >= 1 ) {
-                $('.steps ul li:first-child a img').attr('src','images/usuario.png');
-            } else {
-                $('.steps ul li:first-child a img').attr('src','images/usuario-active.png');
-            }
+$(document).ready(function () {
 
-            if ( newIndex === 1 ) {
-                $('.steps ul li:nth-child(2) a img').attr('src','images/evento-active.png');
-            } else {
-                $('.steps ul li:nth-child(2) a img').attr('src','images/evento.png');
-            }
+    var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn');
 
-            if ( newIndex === 2 ) {
-                $('.steps ul li:nth-child(3) a img').attr('src','images/productos-active.png');
-            } else {
-                $('.steps ul li:nth-child(3) a img').attr('src','images/productos.png');
-            }
+    allWells.hide();
 
-            if ( newIndex === 3 ) {
-                $('.steps ul li:nth-child(4) a img').attr('src','images/finalizar-active.png');
-                $('.actions ul').addClass('finalizar');
-            } else {
-                $('.steps ul li:nth-child(4) a img').attr('src','images/finalizar.png');
-                $('.actions ul').removeClass('finalizar');
-            }
-            return true; 
+    const targetDiv2 = document.getElementById("step-1");
+    const targetDiv = document.getElementById("step-2");
+    const targetDiv3 = document.getElementById("step-3");
+    const btn = document.getElementById("toggle");
+    const btn2 = document.getElementById("toggle2");
+
+    navListItems.click(function (e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+                $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-primary').addClass('btn-default');
+            $item.addClass('btn-default');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
         }
     });
 
-    $('#filterOptions a').click(function () {
-        var ourClass = $(this).attr('class');
-        $('#filterOptions a').removeClass('active');
-        $(this).parent().addClass('active');
+    allNextBtn.click(function(){
+        var curStep = $(this).closest(".setup-content"),
+            curStepBtn = curStep.attr("id"),
+            nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+            curInputs = curStep.find("input[type='text'],input[type='url'], input[type='date']"), 
+            eSelect = document.getElementById("SelectOption"),
+            check1 = document.getElementById("myCheck1"),
+            check2 = document.getElementById("myCheck2"),
+            check3 = document.getElementById("myCheck3"),
+            check4 = document.getElementById("myCheck4"),
+            valueSelect = eSelect.value,
+            isValid = true;
 
-        if (ourClass == 'all') {
-            $('#ourHolder').children().show();
-        } else {
-            $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
-            $('#ourHolder').children('div.' + ourClass).show();
+        $(".form-group").removeClass("has-error");
+
+        if(curStepBtn=="step-2"){
+            for(var i=0; i<curInputs.length; i++){
+                if (!curInputs[i].validity.valid || valueSelect == ""){
+                    isValid = false;
+                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    $(valueSelect).closest(".form-group").addClass("has-error");
+                }
+            }
         }
+        else if(curStepBtn == "step-3"){
+            if (check1.checked == false & check2.checked == false & check3.checked == false & check4.checked == false) {  
+                isValid = false;
+                $(check1).closest(".form-group").addClass("has-error");
+                $(check2).closest(".form-group").addClass("has-error");
+                $(check3).closest(".form-group").addClass("has-error");
+                $(check4).closest(".form-group").addClass("has-error");
+            } 
+        } 
+        else{
+            for(var i=0; i<curInputs.length; i++){
+                if (!curInputs[i].validity.valid){
+                    isValid = false;
+                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                }
+            }
+        } 
 
-        return false;
+        if (isValid)
+            nextStepWizard.removeAttr('disabled').trigger('click');
     });
 
-    // Custom Button Jquery Steps
-    $('.forward').click(function(){
-    	$("#wizard").steps('next');
-    })
-    $('.backward').click(function(){
-        $("#wizard").steps('previous');
-    })
-    // Click to see password 
-    $('.password i').click(function(){
-        if ( $('.password input').attr('type') === 'password' ) {
-            $(this).next().attr('type', 'text');
+    $('div.setup-panel div a.btn-primary').trigger('click');
+
+    btn.onclick = function () {
+        if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+        targetDiv2.style.display="block";
         } else {
-            $('.password input').attr('type', 'password');
+        targetDiv.style.display = "block";
         }
-    }) 
-    // Create Steps Image
-    $('.steps ul li:first-child').append('<img src="images/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/usuario-active.png" alt=""> ').append('<span class="step-order">Paso 1</span>');
-    $('.steps ul li:nth-child(2').append('<img src="images/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/evento.png" alt="">').append('<span class="step-order">Paso 2</span>');
-    $('.steps ul li:nth-child(3)').append('<img src="images/step-arrow.png" alt="" class="step-arrow">').find('a').append('<img src="images/productos.png" alt="">').append('<span class="step-order">Paso 3</span>');
-    $('.steps ul li:last-child a').append('<img src="images/finalizar.png" alt="">').append('<span class="step-order">Paso 4</span>');
-    // Count input 
-    $(".quantity span").on("click", function() {
-
-        var $button = $(this);
-        var oldValue = $button.parent().find("input").val();
-
-        if ($button.hasClass('plus')) {
-          var newVal = parseFloat(oldValue) + 1;
+    };
+    btn2.onclick = function () {
+        if (targetDiv3.style.display !== "none") {
+        targetDiv3.style.display = "none";
+        targetDiv.style.display="block";
         } else {
-           // Don't allow decrementing below zero
-          if (oldValue > 0) {
-            var newVal = parseFloat(oldValue) - 1;
-            } else {
-            newVal = 0;
-          }
+        targetDiv3.style.display = "block";
         }
-        $button.parent().find("input").val(newVal);
-    });
-    
-})
-
-
+    };
+});

@@ -18,8 +18,10 @@
   margin: 0;
   color: #999;
   background: url("../images/form-wizard-bg.jpg") no-repeat center center;
+  height: 100vh;
   background-size: cover;
   display: flex;
+  align-items: center;
   justify-content: center; 
 }
 
@@ -40,7 +42,7 @@
   #ProgessSection select option[value=""][disabled] {
     display: none; }
 
-    #ProgessSection p, h1, h2, h3, h4, h5, h6, ul {
+    #prueba p, h1, h2, h3, h4, h5, h6, ul {
   margin: 0; }
 
   #ProgessSection ul {
@@ -59,9 +61,10 @@
   vertical-align: middle; }
 
   #ProgessSection .wrapper {
-  width: 1250px;
+  width: 826px;
   height: 600px;
-}
+  padding: 63px 90px 0;
+  background: #fff; }
 
   #ProgessSection .wizard {
   position: relative; }
@@ -91,7 +94,7 @@
       color: #666;
       margin-top: 14px; }
 
-      #ProgessSection h3 {
+      #prueba h3 {
   font-family: "Lato-Black";
   font-size: 20px;
   color: #333;
@@ -123,7 +126,7 @@
 
         #ProgessSection .form-holder {
   position: relative; }
-  #ProgessSection .form-holder i {
+  #ProgessSection i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -383,11 +386,11 @@
       padding-top: 30px;
       border-top: 1px solid #e6e6e6; } }
 
-.buttonEdition{
-  font-size: 15px; -moz-osx-font-smoothing: grayscale; padding-top: 10px; padding-bottom: 10px; color:black; height: 70px;
+#prueba .buttonEdition{
+  font-size: 15px; -moz-osx-font-smoothing: grayscale; padding-top: 10px; padding-bottom: 10px; color:black; height: 70px; text-align: center;;
 }
 
-.imageEdition{
+#prueba .imageEdition{
   padding-right: 10px; padding-left: 10px;
 }
 
