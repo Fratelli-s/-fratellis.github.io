@@ -2024,3 +2024,7 @@ border-radius: 100px;
   font-size: 15px;
   color: #8d8d8d;
 }
+
+.evento{
+  max-width: 85%;
+}
