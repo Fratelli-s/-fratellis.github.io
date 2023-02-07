@@ -5,7 +5,7 @@
   font-family: "Lato-Black";
   src: url("../fonts/lato/Lato-Black.ttf"); }
 @font-face {
-  font-family: "Lato-Bold";
+  font-family: "Lato-bold";
   src: url("../fonts/lato/Lato-Bold.ttf"); }
 * {
   -webkit-box-sizing: border-box;
@@ -13,7 +13,7 @@
   box-sizing: border-box; }
 
 #ProgessSection {
-  font-family: "Lato-Regular";
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   margin: 0;
   color: #999;
@@ -21,6 +21,7 @@
   background-size: cover;
   display: flex;
   justify-content: center; 
+  height: 750px;
 }
 
   #ProgessSection :focus {
@@ -30,7 +31,7 @@
   resize: none; }
 
   #ProgessSection input, textarea, select, button {
-  font-family: "Lato-Regular";
+  font-family: "Roboto", sans-serif;
   font-size: 14px; }
 
   #ProgessSection select {
@@ -92,7 +93,8 @@
       margin-top: 14px; }
 
       #ProgessSection h3 {
-  font-family: "Lato-Black";
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   color: #333;
   text-transform: uppercase;
@@ -185,7 +187,8 @@
   font-size: 15px;
   margin-bottom: 17px; }
   #ProgessSection table.cart th {
-    font-family: "Lato-Bold";
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     color: #666;
     padding: 9px 0;
     border-bottom: 1px solid #e6e6e6; }
@@ -204,7 +207,8 @@
     #ProgessSection table.cart .product-detail {
     width: 22.45%; }
     #ProgessSection table.cart .product-detail a {
-      font-family: "Lato-Bold";
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
       color: #666;
       display: block;
       margin-bottom: 6px; }
@@ -242,7 +246,8 @@
     width: 39.78%;
     text-align: center; }
     #ProgessSection table.cart .total-price span {
-      font-family: "Lato-Bold";
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
       color: #92c752;
       font-weight: 700; }
       #ProgessSection table.cart .product-remove {
@@ -264,7 +269,7 @@
     vertical-align: top;
     text-align: left; }
     #ProgessSection .cart_totals th {
-    font-family: "Lato-Bold";
+    font-family: "Roboto", sans-serif;
     color: #333;
     text-align: left;
     width: 65.81%; }
@@ -274,7 +279,7 @@
       #ProgessSection .cart_totals .order-total th, .cart_totals .order-total td {
     padding: 12px 0;
     color: #333;
-    font-family: "Lato-Bold"; }
+    font-family: "Roboto", sans-serif; }
 
     #ProgessSection .checkbox label {
   padding-left: 21px;
@@ -283,7 +288,7 @@
   position: relative;
   margin-bottom: 13px; }
   #ProgessSection .checkbox label span {
-    font-family: "Lato-Bold"; }
+    font-family: "Roboto", sans-serif; }
     #ProgessSection .checkbox input {
   position: absolute;
   opacity: 0;
