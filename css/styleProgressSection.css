@@ -300,7 +300,7 @@
     #ProgessSection .checkbox input {
   position: absolute;
   opacity: 0;
-  cursor: pointer; }
+  cursor: pointer;}
   #ProgessSection .checkbox input:checked ~ .checkmark:after {
   display: block; }
   #ProgessSection .checkbox .checkmark {

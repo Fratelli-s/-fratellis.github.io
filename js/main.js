@@ -109,8 +109,7 @@ $(document).ready(function () {
                 contentType: false, // auto-detection
                 processData: false // no need to parse formData to string
             }).done(function() {
-                alert('Your mail is sent!');
-                document.getElementById("formevent").reset();
+                window.location.reload();
             }).fail(function(error) {
                 alert('Oops... ' + JSON.stringify(error));
             });

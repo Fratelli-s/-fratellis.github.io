@@ -1923,6 +1923,7 @@ video {
 label.check {
   cursor: pointer;
 }
+
 label.check input {
   position: absolute;
   top: 0;
@@ -1944,6 +1945,7 @@ label.check input:checked + span {
   border-color: #b9935a;
   background-color: #b9935a;
   color: #fff;
+  
 }
 
 #prueba body{ 
@@ -2023,6 +2025,10 @@ border-radius: 100px;
   font-family: "Lato-Regular";
   font-size: 15px;
   color: #8d8d8d;
+}
+
+.hevent{
+  min-height: 200px;
 }
 
 .evento{
