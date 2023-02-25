@@ -11,6 +11,7 @@ $(document).ready(function () {
     const targetDiv3 = document.getElementById("step-3");
     const btn = document.getElementById("toggle");
     const btn2 = document.getElementById("toggle2");
+    const sendbutton = document.getElementById("Send");
 
     navListItems.click(function (e) {
         e.preventDefault();
@@ -64,6 +65,7 @@ $(document).ready(function () {
                 if (!curInputs[i].validity.valid){
                     isValid = false;
                     $(curInputs[i]).closest(".form-group").addClass("has-error");
+                
                 }
             }
         } 
@@ -90,4 +92,29 @@ $(document).ready(function () {
         targetDiv3.style.display = "block";
         }
     };
+
+    sendbutton.onclick = function(){
+        $('#formevent').on('submit', function(event) {
+            
+            event.preventDefault(); // prevent reload
+            
+            var formData = new FormData(this);
+            formData.append('service_id', 'FratellisEvents');
+            formData.append('template_id', 'template_r7iyesn');
+            formData.append('user_id', '9tt2Mkz0Xr-VUyi3i');
+         
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+                type: 'POST',
+                data: formData,
+                contentType: false, // auto-detection
+                processData: false // no need to parse formData to string
+            }).done(function() {
+                alert('Your mail is sent!');
+                document.getElementById("formevent").reset();
+            }).fail(function(error) {
+                alert('Oops... ' + JSON.stringify(error));
+            });
+        });
+    }
+
 });
