@@ -29,6 +29,7 @@
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href=
 "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <link rel="shortcut icon" href="images/logo.png">
 
@@ -36,6 +37,15 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("9tt2Mkz0Xr-VUyi3i");
+   })();
+</script>
   </head>
   <body>
       <!-- Page pre loader -->
@@ -97,71 +107,73 @@
         </section> <!-- bread-crumb-container -->
 
         <div class="container" id="prueba" style="padding-bottom: 100px;">
-          <div class="stepwizard">
+          <div class="stepwizard"> 
               <div class="stepwizard-row setup-panel" >
-                  <div class="stepwizard-step">
-                      <a href="#step-1" type="button" class="btn btn-primary btn-circle"> <img src="images/usuario-active.png" alt=""> </a>
-                      <p style="font-family: 'Lato-Regular';">PASO 1</p>
-                  </div>
-                  <div class="stepwizard-step">
-                      <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"> <img src="images/evento-active.png" alt=""> </a>
-                      <p style="font-family: 'Lato-Regular';">PASO 2</p>
-                  </div>
-                  <div class="stepwizard-step">
-                      <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/productos-active.png" alt=""></a>
-                      <p style="font-family: 'Lato-Regular';">PASO 3</p>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/finalizar-active.png" alt=""></a>
-                    <p style="font-family: 'Lato-Regular';">PASO 4</p>
+                <div class="stepwizard-step">
+                    <a href="#step-1" type="button" class="btn btn-primary btn-circle"> <img src="images/usuario-active.png" alt=""> </a>
+                    <p style="font-family: 'Lato-Regular';">PASO 1</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"> <img src="images/evento-active.png" alt=""> </a>
+                    <p style="font-family: 'Lato-Regular';">PASO 2</p>
+                </div>
+                <div class="stepwizard-step">
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/productos-active.png" alt=""></a>
+                    <p style="font-family: 'Lato-Regular';">PASO 3</p>
+                </div>
+                <div class="stepwizard-step">
+                  <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/finalizar-active.png" alt=""></a>
+                  <p style="font-family: 'Lato-Regular';">PASO 4</p>
                 </div>
               </div>
           </div>
-          <form role="form">
-              <div class="row setup-content" style="padding-top: 20px;" id="step-1">
+          <form id="formevent" name="event-form" method="post">
+              <div class="row setup-content " style="padding-top: 20px;" id="step-1">
                   <div class="col-xs-12">
                       <div class="col-md-12">
-                          <h3> DATOS PERSONALES</h3>
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Nombre"  />
-                                  <div class="input-group-addon"><i class="bi bi-person-fill"></i></div>
+                          <h3 class="text-center" style="padding-top: 10px; padding-bottom: 30px;" > DATOS PERSONALES</h3>
+                          <div class="hevent">
+                            <div class="row">
+                              <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="costumer_name" name="costumer_name" maxlength="100" type="text" required="required" class="form-control" placeholder="Nombre"  />
+                                    <div class="input-group-addon"><i class="bi bi-person-fill"></i></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="costumer_surnames" name="costumer_surnames" maxlength="100" type="text" required="required" class="form-control" placeholder="Apellidos"  />
+                                    <div class="input-group-addon"> <i class="bi bi-person-fill"></i></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-md-6 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Apellidos"  />
-                                  <div class="input-group-addon"> <i class="bi bi-person-fill"></i></div>
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="costumer_email" name="costumer_email" maxlength="100" type="text" required="required" class="form-control" placeholder="Correo electrónico"  />
+                                    <div class="input-group-addon"><i class="bi bi-envelope-fill"></i></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Correo electrónico"  />
-                                  <div class="input-group-addon"><i class="bi bi-envelope-fill"></i></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Número telefónico"  />
-                                  <div class="input-group-addon"><i class="bi bi-telephone-fill"></i></div>
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="costumer_phone" name="costumer_phone" maxlength="100" type="text" required="required" class="form-control" placeholder="Número telefónico"  />
+                                    <div class="input-group-addon"><i class="bi bi-telephone-fill"></i></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div class="row" style="padding-top: 20px;">
-                            <button class="btn btn-black nextBtn btn-lg pull-right" type="submit button" >Next</button>
+                            <button class="btn btn-black nextBtn btn-lg pull-right">Next</button>
                           </div>
                       </div>
                   </div>
@@ -169,46 +181,49 @@
               <div class="row setup-content" style="padding-top: 20px;" id="step-2">
                   <div class="col-xs-12">
                       <div class="col-md-12">
-                          <h3> DATOS DEL EVENTO </h3>
-                          <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <select id="SelectOption" class="form-select form-control" required>
-                                    <option value="">Tipo de evento...</option>
-                                    <option value="One">One</option>
-                                    <option value="two">Two</option>
-                                    <option value="Three">Three</option>
-                                  </select>
-                                  <div class="input-group-addon"><i class="bi bi-envelope-fill"></i></div>
+                          <h3 class="text-center" style="padding-top: 10px; padding-bottom: 30px;" > DATOS DEL EVENTO </h3>
+                          <div class="hevent">
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <select id="SelectOption" name="SelectOption" class="form-select form-control" maxlength="100" style="height: 42px;" required>
+                                      <option value="">Tipo de evento</option>
+                                      <option value="Fiesta de cumpleaños">Fiesta de cumpleaños</option>
+                                      <option value="Boda">Boda</option>
+                                      <option value="Evento corporativo">Evento corporativo</option>
+                                      <option value="Reunión familiar">Reunión familiar</option>
+                                    </select>
+                                    <div class="input-group-addon"><i class="bi bi-clipboard2-heart-fill"></i></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input id="dateinput" maxlength="100" type="date" class="form-control" placeholder="Fecha del evento" required="required">
-                                  <div class="input-group-addon"><i class="bi bi-people-fill"></i></div>
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="dateinput" name="dateinput" maxlength="100" style="height: 42px;" type="date" class="form-control" placeholder="Fecha del evento" required="required">
+                                    <div class="input-group-addon"><i class="bi bi-calendar3"></i></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Cantidad de personas"  />
-                                  <div class="input-group-addon"><i class="bi bi-people-fill"></i></div>
+                            <div class="row">
+                              <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="CantidadPersonas" name="CantidadPersonas" maxlength="100" type="text" required="required" class="form-control" placeholder="Cantidad de personas"  />
+                                    <div class="input-group-addon"><i class="bi bi-people-fill"></i></div>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <div class="form-group">
-                                <div class="input-group">
-                                  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Duración del evento"  />
-                                  <div class="input-group-addon"><i class="bi bi-alarm-fill"></i></div>
+                              <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                  <div class="input-group">
+                                    <input id="Duracion" name="Duracion" maxlength="100" type="text" required="required" class="form-control" placeholder="Duración del evento"  />
+                                    <div class="input-group-addon"><i class="bi bi-alarm-fill"></i></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -223,59 +238,61 @@
               <div class="row setup-content" style="padding-top: 20px;" id="step-3">
                 <div class="col-xs-12">
                     <div class="col-md-12">
-                        <h3> DATOS DEL EVENTO </h3>
-                        <div class="row" style="margin-top: 16px;">
-                          <div class="col-md-3 col-xs-3">
-                            <label class="check">
-                              <input type="checkbox" id="myCheck1">
-                              <span>
-                                <div class="row">
-                                  <p href="#"><img src="images/menu/helados/1.jpg" class="imageEdition" alt=""></p>
-                                </div>
-                                <div class="row">
-                                  <p href="#" class="buttonEdition">HELADOS</p>
-                                </div>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="col-md-3 col-xs-3">
-                            <label class="check">
-                              <input type="checkbox" id="myCheck2">
-                              <span>
-                                <div class="row">
-                                  <p href="#"><img src="images/menu/bebidas/1.jpg" class="imageEdition" alt=""></p>
-                                </div>
-                                <div class="row">
-                                  <p href="#" class="buttonEdition">BEBIDAS</p>
-                                </div>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="col-md-3 col-xs-3">
-                            <label class="check">
-                              <input type="checkbox" id="myCheck3">
-                              <span>
-                                <div class="row">
-                                  <p href="#"><img src="images/menu/bebidas calientes/1.jpg" class="imageEdition" alt=""></p>
-                                </div>
-                                <div class="row">
-                                  <p href="#" class="buttonEdition">BEBIDAS CALIENTES</p>
-                                </div>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="col-md-3 col-xs-3">
-                            <label class="check">
-                              <input type="checkbox" id="myCheck4">
-                              <span>
-                                <div class="row">
-                                  <p href="#"><img src="images/menu/bebidas calientes/1.jpg" class="imageEdition" alt=""></p>
-                                </div>
-                                <div class="row">
-                                  <p href="#" class="buttonEdition">POSTRES</p>
-                                </div>
-                              </span>
-                            </label>
+                        <h3 class="text-center" style="padding-top: 10px; padding-bottom: 30px;" > PRODUCTOS DEL EVENTO </h3>
+                        <div class="hevent">
+                          <div class="row" style="margin-top: 16px;">
+                            <div class="col-md-3 col-xs-3">
+                              <label class="check">
+                                <input name="myCheck1" type="checkbox" id="myCheck1" value="Helados">
+                                <span>
+                                  <div class="row">
+                                    <p href="#"><img src="images/menu/helados/1.jpg" class="imageEdition" alt=""></p>
+                                  </div>
+                                  <div class="row">
+                                    <p href="#" class="buttonEdition">HELADOS</p>
+                                  </div>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+                              <label class="check">
+                                <input type="checkbox" id="myCheck2" name="myCheck2" value="Bebidas">
+                                <span>
+                                  <div class="row">
+                                    <p href="#"><img src="images/menu/bebidas/1.jpg" class="imageEdition" alt=""></p>
+                                  </div>
+                                  <div class="row">
+                                    <p href="#" class="buttonEdition">BEBIDAS</p>
+                                  </div>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+                              <label class="check">
+                                <input type="checkbox" id="myCheck3" name="myCheck3" value="Bebidas Calientes">
+                                <span>
+                                  <div class="row">
+                                    <p href="#"><img src="images/menu/bebidas calientes/1.jpg" class="imageEdition" alt=""></p>
+                                  </div>
+                                  <div class="row">
+                                    <p href="#" class="buttonEdition">BEBIDAS CALIENTES</p>
+                                  </div>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="col-md-3 col-xs-3">
+                              <label class="check">
+                                <input type="checkbox" id="myCheck4" name="myCheck4" value="Postres">
+                                <span>
+                                  <div class="row">
+                                    <p href="#"><img src="images/menu/bebidas calientes/1.jpg" class="imageEdition" alt=""></p>
+                                  </div>
+                                  <div class="row">
+                                    <p href="#" class="buttonEdition">POSTRES</p>
+                                  </div>
+                                </span>
+                              </label>
+                            </div>
                           </div>
                         </div>
                         <div class="row" style="padding-top: 20px;">
@@ -288,14 +305,14 @@
               <div class="row setup-content" style="padding-top: 20px;" id="step-4">
                   <div class="col-xs-12">
                       <div class="col-md-12">
-                        <h3>¡GRACIAS POR SU PREFERENCIA!</h3>
-                        <div class="row" style="font-family: 'Lato-Regular'; text-align: center;">
+                        <h3 class="text-center" style="padding-top: 10px; padding-bottom: 30px;">¡GRACIAS POR SU PREFERENCIA!</h3>
+                        <div class="row hevent" style="font-family: 'Lato-Regular'; text-align: center;">
                           <span class="woocommerce-Price-amount amount" >
                             Recibiremos su contratación con todos los datos proporcionados y nos contactaremos con usted lo antes posible.
                           </span>
                         </div>
                         <div class="row" style="padding-top: 20px;">
-                          <button class="btn btn-black btn-lg pull-right" type="submit">Finish!</button>
+                          <button class="btn btn-black btn-lg pull-right" type="submit" name="submit" id="Send" >Enviar</button>
                         </div>
                       </div>
                   </div>
