@@ -116,25 +116,4 @@ $(document).ready(function () {
         });
     }
 
-    const full_name = document.getElementById("full_name");
-    const email_address = document.getElementById("email_address");
-    const message = document.getElementById("message");
-    const Send_index = document.getElementsByClassName("form-footer")[0];
-
-    Send_index.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        console.log("Clicked");
-
-        Email.send({
-            SecureToken : "13ad6542-f3c0-49ab-ab23-a63e56f66621",
-            To : 'chofasbff@gmail.com',
-            From : "chofasbff@gmail.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
-
-    });
-
 });
