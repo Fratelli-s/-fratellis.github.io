@@ -324,20 +324,20 @@
               </div>
               <div class="col-md-4 col-sm-5 col-xs-12">
                 <div class="footer-column footer-column-form">
-                  <form class="form-footer" name="contact-form" method="post" action="functions.php">
+                  <form class="form-footer" action="https://formsubmit.co/chofasbff@gmail.com" name="contact-form" method="post">
                     <h3>Contáctanos</h3>
                     <div class="alert-container"></div>
                     <div class="form-field">
-                      <input type="text" name="full_name" placeholder="* Nombre" required>
+                      <input type="text" id="full_name" name="full_name" placeholder="* Nombre" required>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <input type="email" name="email_address" placeholder="* Email" required>
+                      <input type="email" id="email_address" name="email_address" placeholder="* Email" required>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <textarea name="message" placeholder="* commentario" required></textarea>
+                      <textarea id="message" name="message" placeholder="* commentario" required></textarea>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <button type="submit" class="btn-black send_message">Enviar</button>
+                      <button type="submit" name="submit" id="Send_index" class="btn-black send_message">Enviar</button>
                     </div> <!-- form-field -->
                   </form>
                 </div> <!-- footer-column -->
@@ -362,5 +362,6 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
