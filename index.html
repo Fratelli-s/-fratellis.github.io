@@ -22,7 +22,6 @@
     <link href="css/responsive.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="images/logo.png">
-    
   </head>
   <body>
       <!-- Page pre loader -->
@@ -325,7 +324,7 @@
               </div>
               <div class="col-md-4 col-sm-5 col-xs-12">
                 <div class="footer-column footer-column-form">
-                  <form class="form-footer" action="https://formsubmit.co/chofasbff@gmail.com" method="POST">
+                  <form class="form-footer" action="https://formsubmit.co/chofasbff@gmail.com" name="contact-form" method="post">
                     <h3>Contáctanos</h3>
                     <div class="alert-container"></div>
                     <div class="form-field">
@@ -338,8 +337,7 @@
                       <textarea id="message" name="message" placeholder="* commentario" required></textarea>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <button type="submit" class="btn-black send_message" name="submit" id="Send_index">Enviar</button>
-                      <input type="hidden" name="_captcha" value="false">
+                      <button type="submit" name="submit" id="Send_index" class="btn-black send_message">Enviar</button>
                     </div> <!-- form-field -->
                   </form>
                 </div> <!-- footer-column -->
@@ -365,6 +363,5 @@
     <script src="js/jquery.isotope.js"></script>
     <script src="js/script.js"></script>
     <script src="js/main.js"></script>
-    </script>
   </body>
 </html>
