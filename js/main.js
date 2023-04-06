@@ -126,7 +126,7 @@ $(document).ready(function () {
         console.log("Clicked");
 
         Email.send({
-            SecureToken : "ce503115-9247-4245-803e-dd7c154e3e6d",
+            SecureToken : "13ad6542-f3c0-49ab-ab23-a63e56f66621",
             To : 'chofasbff@gmail.com',
             From : "chofasbff@gmail.com",
             Subject : "This is the subject",
