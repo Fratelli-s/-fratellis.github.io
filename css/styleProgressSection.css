@@ -1,16 +1,20 @@
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../fonts/lato/Lato-Regular.ttf"); }
+  src: url("../fonts/lato/Lato-Regular.ttf");
+}
 @font-face {
   font-family: "Lato-Black";
-  src: url("../fonts/lato/Lato-Black.ttf"); }
+  src: url("../fonts/lato/Lato-Black.ttf");
+}
 @font-face {
   font-family: "Lato-bold";
-  src: url("../fonts/lato/Lato-Bold.ttf"); }
+  src: url("../fonts/lato/Lato-Bold.ttf");
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 #ProgessSection {
   font-family: "Roboto", sans-serif;
@@ -22,84 +26,113 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   height: 750px;
 }
 
-  #ProgessSection :focus {
-  outline: none; }
+#ProgessSection :focus {
+  outline: none;
+}
 
-  #ProgessSection textarea {
-  resize: none; }
+#ProgessSection textarea {
+  resize: none;
+}
 
-  #ProgessSection input, textarea, select, button {
+#ProgessSection input,
+textarea,
+select,
+button {
   font-family: "Roboto", sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
-  #ProgessSection select {
+#ProgessSection select {
   -moz-appearance: none;
   -webkit-appearance: none;
-  cursor: pointer; }
-  #ProgessSection select option[value=""][disabled] {
-    display: none; }
+  cursor: pointer;
+}
+#ProgessSection select option[value=""][disabled] {
+  display: none;
+}
 
-    #prueba p, h1, h2, h3, h4, h5, h6, ul {
-  margin: 0; }
+#prueba p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
 
-  #ProgessSection ul {
+#ProgessSection ul {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none;
+}
 
-  #ProgessSection a {
-  text-decoration: none; }
+#ProgessSection a {
+  text-decoration: none;
+}
 
-  #ProgessSection textarea {
-  resize: none; }
+#ProgessSection textarea {
+  resize: none;
+}
 
-  #ProgessSection img {
+#ProgessSection img {
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
-  #ProgessSection .wrapper {
+#ProgessSection .wrapper {
   width: 826px;
   height: 600px;
   padding: 63px 90px 0;
-  background: #fff; }
+  background: #fff;
+}
 
-  #ProgessSection .wizard {
-  position: relative; }
+#ProgessSection .wizard {
+  position: relative;
+}
 
-  #ProgessSection .steps .current-info, .steps .number {
-  display: none; }
+#ProgessSection .steps .current-info,
+.steps .number {
+  display: none;
+}
 
-  #ProgessSection .steps ul {
+#ProgessSection .steps ul {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px; }
-  #ProgessSection .steps ul li {
-    margin-right: 10.8%;
-    position: relative; }
-    #ProgessSection .steps ul li:last-child {
-      margin-right: 0; }
-      #ProgessSection .steps ul li .step-arrow {
-      position: absolute;
-      top: 33%;
-      left: 113%;
-      max-width: 57%; }
-      #ProgessSection .steps ul li .step-order {
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 12px;
-      color: #666;
-      margin-top: 14px; }
+  margin-bottom: 35px;
+}
+#ProgessSection .steps ul li {
+  margin-right: 10.8%;
+  position: relative;
+}
+#ProgessSection .steps ul li:last-child {
+  margin-right: 0;
+}
+#ProgessSection .steps ul li .step-arrow {
+  position: absolute;
+  top: 33%;
+  left: 113%;
+  max-width: 57%;
+}
+#ProgessSection .steps ul li .step-order {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666;
+  margin-top: 14px;
+}
 
+#prueba h3 {
+  font-family: "Lato-Black";
+}
 
-      #prueba h3 {
-  font-family: "Lato-Black";}
-
-      #ProgessSection h3 {
+#ProgessSection h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 
@@ -110,298 +143,394 @@
   font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 29px;
-  font-weight: 900; }
+  font-weight: 900;
+}
 
-  #ProgessSection .form-row {
+#ProgessSection .form-row {
   display: flex;
-  margin-bottom: 20px; }
-  #ProgessSection .form-row .form-holder {
-    width: 50%;
-    margin-right: 20px; }
-    #ProgessSection .form-row .form-holder:last-child {
-      margin-right: 0; }
-      #ProgessSection .form-row .form-holder.w-100 {
-      width: 100%;
-      margin-right: 0; }
-      #ProgessSection .form-row .form-group {
-    width: 50%;
-    display: flex; }
-    #ProgessSection .form-row .form-group .form-holder {
-      margin-right: 21px; }
-      #ProgessSection .form-row .form-group .form-holder:last-child {
-        margin-right: 0; }
+  margin-bottom: 20px;
+}
+#ProgessSection .form-row .form-holder {
+  width: 50%;
+  margin-right: 20px;
+}
+#ProgessSection .form-row .form-holder:last-child {
+  margin-right: 0;
+}
+#ProgessSection .form-row .form-holder.w-100 {
+  width: 100%;
+  margin-right: 0;
+}
+#ProgessSection .form-row .form-group {
+  width: 50%;
+  display: flex;
+}
+#ProgessSection .form-row .form-group .form-holder {
+  margin-right: 21px;
+}
+#ProgessSection .form-row .form-group .form-holder:last-child {
+  margin-right: 0;
+}
 
-        #ProgessSection .form-holder {
-  position: relative; }
-  #ProgessSection i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    font-size: 16px; }
-    #ProgessSection .form-holder i.zmdi-eye {
-      cursor: pointer; }
+#ProgessSection .form-holder {
+  position: relative;
+}
+#ProgessSection i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 16px;
+}
+#ProgessSection .form-holder i.zmdi-eye {
+  cursor: pointer;
+}
 
-      #ProgessSection .form-control {
+#ProgessSection .form-control {
   height: 42px;
   border: 1px solid #e6e6e6;
   width: 100%;
   background: none;
   padding: 0 35px 0 19px;
-  color: #999; }
-  #ProgessSection .form-control:focus {
-    border-color: #b9935a; }
-    #ProgessSection .form-control::-webkit-input-placeholder {
-    color: #999; }
-    #ProgessSection .form-control::-moz-placeholder {
-    color: #999; }
-    #ProgessSection .form-control:-ms-input-placeholder {
-    color: #999; }
-    #ProgessSection .form-control:-moz-placeholder {
-    color: #999; }
+  color: #999;
+}
+#ProgessSection .form-control:focus {
+  border-color: #b9935a;
+}
+#ProgessSection .form-control::-webkit-input-placeholder {
+  color: #999;
+}
+#ProgessSection .form-control::-moz-placeholder {
+  color: #999;
+}
+#ProgessSection .form-control:-ms-input-placeholder {
+  color: #999;
+}
+#ProgessSection .form-control:-moz-placeholder {
+  color: #999;
+}
 
-    #ProgessSection .actions {
-  margin-top: 30px; }
-  #ProgessSection  .actions ul {
-    display: flex;
-    justify-content: space-between; }
-    #ProgessSection .actions ul.step-4 {
-      justify-content: center; }
-      #ProgessSection .actions ul.step-4 li:first-child {
-        display: none; }
-        #ProgessSection .actions li a {
-    border: none;
-    display: inline-flex;
-    height: 42px;
-    width: 132px;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-    background:  black;
-    text-transform: uppercase;
-    justify-content: center;
-    letter-spacing: 1px;
-    font-size: 15px;
-    border-radius: 3px; }
-    #ProgessSection .actions li a:hover {
-      background: #b9935a; }
-      #ProgessSection .actions li:first-child a {
-    width: 97px; }
-    #ProgessSection .actions li:last-child a {
-    width: 234px; }
+#ProgessSection .actions {
+  margin-top: 30px;
+}
+#ProgessSection .actions ul {
+  display: flex;
+  justify-content: space-between;
+}
+#ProgessSection .actions ul.step-4 {
+  justify-content: center;
+}
+#ProgessSection .actions ul.step-4 li:first-child {
+  display: none;
+}
+#ProgessSection .actions li a {
+  border: none;
+  display: inline-flex;
+  height: 42px;
+  width: 132px;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  background: black;
+  text-transform: uppercase;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+#ProgessSection .actions li a:hover {
+  background: #b9935a;
+}
+#ProgessSection .actions li:first-child a {
+  width: 97px;
+}
+#ProgessSection .actions li:last-child a {
+  width: 234px;
+}
 
-    #ProgessSection table.cart {
+#ProgessSection table.cart {
   width: 100%;
   font-size: 15px;
-  margin-bottom: 17px; }
-  #ProgessSection table.cart th {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: #666;
-    padding: 9px 0;
-    border-bottom: 1px solid #e6e6e6; }
-    #ProgessSection table.cart td {
-    padding: 13px 0;
-    border-bottom: 1px solid #e6e6e6; }
-    #ProgessSection table.cart tr:last-child td {
-    border: none; }
-    #ProgessSection .cart tr:last-child td {
-    padding-bottom: 0; }
-    #ProgessSection table.cart .item-thumb {
-    display: inline-block;
-    border: 1px solid #e6e6e6; }
-    #ProgessSection table.cart .product-thumb {
-    width: 17.49%; }
-    #ProgessSection table.cart .product-detail {
-    width: 22.45%; }
-    #ProgessSection table.cart .product-detail a {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-      color: #666;
-      display: block;
-      margin-bottom: 6px; }
-      #ProgessSection table.cart .product-detail span {
-      color: #999; }
-      #ProgessSection table.cart .product-quantity {
-    width: 16.25%; }
-    #ProgessSection table.cart .product-quantity .quantity {
-      display: inline-block;
-      width: 105px;
-      height: 36px;
-      background: #f2f2f2;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      #ProgessSection table.cart .product-quantity span {
-      cursor: pointer;
-      display: inline-block;
-      flex-grow: 1;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      #ProgessSection table.cart .product-quantity input {
-      border: none;
-      padding: 0;
-      width: 17px;
-      font-size: 15px;
-      color: #666;
-      background: none;
-      text-align: center; }
-      #ProgessSection table.cart .product-quantity input::-webkit-outer-spin-button, table.cart .product-quantity input::-webkit-inner-spin-button {
-        -webkit-appearance: none; }
-        #ProgessSection table.cart .total-price {
-    width: 39.78%;
-    text-align: center; }
-    #ProgessSection table.cart .total-price span {
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-      color: #92c752;
-      font-weight: 700; }
-      #ProgessSection table.cart .product-remove {
-    width: 4.03%;
-    text-align: right; }
-    #ProgessSection table.cart .product-remove a {
-      color: #666; }
+  margin-bottom: 17px;
+}
+#ProgessSection table.cart th {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #666;
+  padding: 9px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+#ProgessSection table.cart td {
+  padding: 13px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+#ProgessSection table.cart tr:last-child td {
+  border: none;
+}
+#ProgessSection .cart tr:last-child td {
+  padding-bottom: 0;
+}
+#ProgessSection table.cart .item-thumb {
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+}
+#ProgessSection table.cart .product-thumb {
+  width: 17.49%;
+}
+#ProgessSection table.cart .product-detail {
+  width: 22.45%;
+}
+#ProgessSection table.cart .product-detail a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #666;
+  display: block;
+  margin-bottom: 6px;
+}
+#ProgessSection table.cart .product-detail span {
+  color: #999;
+}
+#ProgessSection table.cart .product-quantity {
+  width: 16.25%;
+}
+#ProgessSection table.cart .product-quantity .quantity {
+  display: inline-block;
+  width: 105px;
+  height: 36px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ProgessSection table.cart .product-quantity span {
+  cursor: pointer;
+  display: inline-block;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ProgessSection table.cart .product-quantity input {
+  border: none;
+  padding: 0;
+  width: 17px;
+  font-size: 15px;
+  color: #666;
+  background: none;
+  text-align: center;
+}
+#ProgessSection table.cart .product-quantity input::-webkit-outer-spin-button,
+table.cart .product-quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#ProgessSection table.cart .total-price {
+  width: 39.78%;
+  text-align: center;
+}
+#ProgessSection table.cart .total-price span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #92c752;
+  font-weight: 700;
+}
+#ProgessSection table.cart .product-remove {
+  width: 4.03%;
+  text-align: right;
+}
+#ProgessSection table.cart .product-remove a {
+  color: #666;
+}
 
-      #ProgessSection .cart_totals {
+#ProgessSection .cart_totals {
   font-size: 15px;
   color: #666;
   width: 66.56%;
   margin: auto;
-  margin-bottom: 31px; }
-  #ProgessSection .cart_totals table {
-    width: 100%; }
-    #ProgessSection .cart_totals th, .cart_totals td {
-    padding: 11px 0;
-    vertical-align: top;
-    text-align: left; }
-    #ProgessSection .cart_totals th {
-    font-family: "Roboto", sans-serif;
-    color: #333;
-    text-align: left;
-    width: 65.81%; }
-    #ProgessSection .cart_totals th span {
-      color: #999;
-      font-size: 14px; }
-      #ProgessSection .cart_totals .order-total th, .cart_totals .order-total td {
-    padding: 12px 0;
-    color: #333;
-    font-family: "Roboto", sans-serif; }
+  margin-bottom: 31px;
+}
+#ProgessSection .cart_totals table {
+  width: 100%;
+}
+#ProgessSection .cart_totals th,
+.cart_totals td {
+  padding: 11px 0;
+  vertical-align: top;
+  text-align: left;
+}
+#ProgessSection .cart_totals th {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  text-align: left;
+  width: 65.81%;
+}
+#ProgessSection .cart_totals th span {
+  color: #999;
+  font-size: 14px;
+}
+#ProgessSection .cart_totals .order-total th,
+.cart_totals .order-total td {
+  padding: 12px 0;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
 
-    #ProgessSection .checkbox label {
+#ProgessSection .checkbox label {
   padding-left: 21px;
   cursor: pointer;
   display: block;
   position: relative;
-  margin-bottom: 13px; }
-  #ProgessSection .checkbox label span {
-    font-family: "Roboto", sans-serif; }
-    #ProgessSection .checkbox input {
+  margin-bottom: 13px;
+}
+#ProgessSection .checkbox label span {
+  font-family: "Roboto", sans-serif;
+}
+#ProgessSection .checkbox input {
   position: absolute;
   opacity: 0;
-  cursor: pointer;}
-  #ProgessSection .checkbox input:checked ~ .checkmark:after {
-  display: block; }
-  #ProgessSection .checkbox .checkmark {
+  cursor: pointer;
+}
+#ProgessSection .checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+#ProgessSection .checkbox .checkmark {
   position: absolute;
   top: 3px;
   left: 0;
   height: 13px;
   width: 13px;
   border-radius: 50%;
-  border: 1px solid #999; }
-  #ProgessSection .checkbox .checkmark:after {
-    content: "";
-    top: 2px;
-    left: 2px;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #999;
-    position: absolute;
-    display: none; }
+  border: 1px solid #999;
+}
+#ProgessSection .checkbox .checkmark:after {
+  content: "";
+  top: 2px;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #999;
+  position: absolute;
+  display: none;
+}
 
 @media (max-width: 991px) {
   #ProgessSection .steps ul li .step-arrow {
     top: 45%;
-    left: 102%; }
+    left: 102%;
+  }
 
-    #ProgessSection .cart_totals {
-    width: 74%; } }
+  #ProgessSection .cart_totals {
+    width: 74%;
+  }
+}
 @media (max-width: 767px) {
   #ProgessSection {
     background: none;
     height: auto;
-    display: block; }
+    display: block;
+  }
 
-    #ProgessSection .steps ul li .step-arrow {
-    top: 35%; }
+  #ProgessSection .steps ul li .step-arrow {
+    top: 35%;
+  }
 
-    #ProgessSection .wrapper {
+  #ProgessSection .wrapper {
     width: auto;
     padding: 0;
-    height: auto; }
-
-    #ProgessSection .wizard {
     height: auto;
-    padding: 40px 20px 20px; }
+  }
 
-    #ProgessSection .form-row {
-    display: block; }
-    #ProgessSection .form-row .form-holder {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 25px; }
-      #ProgessSection .form-row .form-group {
-      width: 100%;
-      display: block; }
+  #ProgessSection .wizard {
+    height: auto;
+    padding: 40px 20px 20px;
+  }
 
-      #ProgessSection .actions ul {
+  #ProgessSection .form-row {
+    display: block;
+  }
+  #ProgessSection .form-row .form-holder {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  #ProgessSection .form-row .form-group {
+    width: 100%;
+    display: block;
+  }
+
+  #ProgessSection .actions ul {
     flex-direction: column;
-    align-items: flex-end; }
-    #ProgessSection .actions ul li {
-      margin-bottom: 20px; }
+    align-items: flex-end;
+  }
+  #ProgessSection .actions ul li {
+    margin-bottom: 20px;
+  }
 
-      #ProgessSection .cart_totals {
-    width: 100%; }
-    #ProgessSection .cart_totals .shipping th, .cart_totals .shipping td {
-      display: block;
-      text-align: left; }
-      #ProgessSection .cart_totals td {
-      text-align: right; }
-      #ProgessSection .cart_totals th {
-      width: 80%; }
+  #ProgessSection .cart_totals {
+    width: 100%;
+  }
+  #ProgessSection .cart_totals .shipping th,
+  .cart_totals .shipping td {
+    display: block;
+    text-align: left;
+  }
+  #ProgessSection .cart_totals td {
+    text-align: right;
+  }
+  #ProgessSection .cart_totals th {
+    width: 80%;
+  }
 
-      #ProgessSection table.cart th {
-    display: none; }
-    #ProgessSection table.cart td {
+  #ProgessSection table.cart th {
+    display: none;
+  }
+  #ProgessSection table.cart td {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: none; }
-    #ProgessSection table.cart td:before {
-      content: attr(data-title);
-      font-weight: 700;
-      color: #333; }
-      #ProgessSection table.cart .product-thumb, table.cart .product-detail, table.cart .product-quantity, table.cart .total-price, table.cart .product-remove {
-    width: 100%; }
-    #ProgessSection table.cart .product-thumb, table.cart .product-remove {
-    justify-content: center; }
-    #ProgessSection table.cart tr:first-child td:last-child {
-    padding-bottom: 30px; }
-    #ProgessSection table.cart tr:last-child td {
-    padding-bottom: 13px; }
-    #ProgessSection table.cart tr:last-child td:first-child {
-      padding-top: 30px;
-      border-top: 1px solid #e6e6e6; } }
-
-#prueba .buttonEdition{
-  font-size: 15px; -moz-osx-font-smoothing: grayscale; padding-top: 10px; padding-bottom: 10px; color:black; height: 70px; text-align: center;;
+    border: none;
+  }
+  #ProgessSection table.cart td:before {
+    content: attr(data-title);
+    font-weight: 700;
+    color: #333;
+  }
+  #ProgessSection table.cart .product-thumb,
+  table.cart .product-detail,
+  table.cart .product-quantity,
+  table.cart .total-price,
+  table.cart .product-remove {
+    width: 100%;
+  }
+  #ProgessSection table.cart .product-thumb,
+  table.cart .product-remove {
+    justify-content: center;
+  }
+  #ProgessSection table.cart tr:first-child td:last-child {
+    padding-bottom: 30px;
+  }
+  #ProgessSection table.cart tr:last-child td {
+    padding-bottom: 13px;
+  }
+  #ProgessSection table.cart tr:last-child td:first-child {
+    padding-top: 30px;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
-#prueba .imageEdition{
-  padding-right: 10px; padding-left: 10px;
+#prueba .buttonEdition {
+  font-size: 15px;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 70px;
+  text-align: center;
+}
+
+#prueba .imageEdition {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
