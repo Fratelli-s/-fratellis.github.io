@@ -9,8 +9,8 @@ $(document).ready(function () {
     const targetDiv2 = document.getElementById("step-1");
     const targetDiv = document.getElementById("step-2");
     const targetDiv3 = document.getElementById("step-3");
-    const btn = document.getElementById("toggle");
-    const btn2 = document.getElementById("toggle2");
+    const btn = document.getElementById("regresar");
+    const btn2 = document.getElementById("regresar2");
     const sendbutton = document.getElementById("Send");
 
     navListItems.click(function (e) {

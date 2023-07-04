@@ -358,21 +358,24 @@
               </div>
               <div class="col-md-4 col-sm-5 col-xs-12">
                 <div class="footer-column footer-column-form">
-                  <form class="form-footer" name="contact-form" method="post" action="functions.php">
+                  <form class="form-footer" action="https://formsubmit.co/fratellisheladeria16@gmail.com" name="contact-form" method="post">
                     <h3>Contáctanos</h3>
                     <div class="alert-container"></div>
                     <div class="form-field">
-                      <input type="text" name="full_name" placeholder="* Nombre" required>
+                      <input type="text" id="full_name" name="Nombre del cliente" placeholder="* Nombre" required>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <input type="email" name="email_address" placeholder="* Email" required>
+                      <input type="email" id="email_address" name="Correo electrónico" placeholder="* Email" required>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <textarea name="message" placeholder="* commentario" required></textarea>
+                      <textarea id="message" name="Comentario" placeholder="* commentario" required></textarea>
                     </div> <!-- form-field -->
                     <div class="form-field">
-                      <button type="submit" class="btn-black send_message">Enviar</button>
+                      <button type="submit" name="submit" id="Send_index" class="btn-black send_message">Enviar</button>
                     </div> <!-- form-field -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://fratelli-s.github.io/fratellis.github.io/">
+                    <input type="hidden" name="_template" value="box">
                   </form>
                 </div> <!-- footer-column -->
               </div>
@@ -396,8 +399,6 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.js"></script>
     <script src="js/script.js"></script>
-
-    <script src="js/jquery-3.3.1.min.js"></script>
 		
 		<!-- JQUERY STEP -->
 		<script src="js/jquery.steps.js"></script>
